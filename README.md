@@ -31,6 +31,7 @@ Anyways, the reason I made it is because I always had plans to make my own websi
 ## Branches
 
 Main: is the first branch you see
+
 gh-pages: is what's pushed out to the public
 
 ---
