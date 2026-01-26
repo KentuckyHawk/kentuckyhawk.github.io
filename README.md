@@ -12,7 +12,7 @@ This is my website. This is a website that I started about some time in december
 Anyways, the reason I made it is because I always had plans to make my own website. but I just now got around to buying a domain and deciding to say, you know what, I'm gonna finally do it. So I did. And you're looking at it.
 
 > [!NOTE]
-> Prior to this, this was originally just a basic splash page until I actually got the actual website up and ready, which the old splash page site will be available [here](https://kentuckyhawk.com/archives/soon) and in the releases tab ***(debranded of course)***.
+> Prior to this, this was originally just a basic splash page until I actually got the actual website up and ready, which the old splash page site will be available [here](https://kentuckyhawk.com/archived/soon) and in the releases tab ***(debranded of course)***.
 
 ---  
 
