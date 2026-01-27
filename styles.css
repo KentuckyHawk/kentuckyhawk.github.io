@@ -29,10 +29,6 @@ a:focus {
     outline: none;                       
 }
 
-a:visited {
-    color: #c49a00;                      
-}
-
 header {
     position:relative ;
     background-color:var(--background);
