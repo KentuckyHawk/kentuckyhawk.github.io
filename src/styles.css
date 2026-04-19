@@ -18,15 +18,32 @@ body {
     background-color: var(--background);
 }
 
+::-moz-selection {
+    background-color: var(--primary);
+    color: var(--background);
+}
+::selection {
+    background-color: var(--primary);
+    color: var(--background);
+}
+
 a {
-    color: var(--primary);              
+    color: var(--primary);
     transition: color 0.2s ease, background-color 0.2s ease, text-shadow 0.2s ease;
 }
 
 a:hover,
-a:focus {             
-    text-shadow: 0 0 4px var(--primary); 
-    outline: none;                       
+a:focus {
+    text-shadow: 0 0 4px var(--primary);
+    outline: none;
+}
+
+p {
+    letter-spacing: 0.02em
+}
+
+h2 {
+    color: var(--primary)
 }
 
 header {
@@ -48,23 +65,23 @@ nav {
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  text-decoration: none;
-  font-size: 1.3rem; 
-  font-weight: bold; 
-  color: var(--primary);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--primary);
 }
 
 .logo:hover {
-    text-shadow: none; 
+    text-shadow: none;
     outline: none;
 }
 
 .logo-icon {
-  width: 40px;
-  height: auto;
+    width: 40px;
+    height: auto;
 }
 
 .nav-links {
@@ -128,7 +145,7 @@ nav {
 }
 .hero-content {
     flex: 1;
-    z-index: 2;  
+    z-index: 2;
     max-width: 600px;
 }
 .hero-content h1 {
@@ -564,7 +581,7 @@ section {
 .blog-post-content {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #444;
+    color: #fff;
 }
 
 .blog-post-content p {
@@ -583,7 +600,7 @@ section {
     margin: 2rem 0 1rem;
 }
 
-.blog-post-content blockquote {
+blockquote {
     border-left: 4px solid var(--primary);
     padding-left: 1.5rem;
     margin: 2rem 0;
@@ -773,109 +790,109 @@ section {
 }
 
 .footer {
-  border-top: 1px solid #fff;
-  background: var(--background);
-  color: var(--text);
-  padding: 1rem 0;
+    border-top: 1px solid #fff;
+    background: var(--background);
+    color: var(--text);
+    padding: 1rem 0;
 }
 
 .footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .footer-brand {
-  display: flex;
-  align-items: center;
-  flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    flex: 0 0 auto;
 }
 
 .brand-icon {
-  width: 24px;
-  height: 24px;
+    width: 24px;
+    height: 24px;
 }
 
 .brand-text {
-  margin-left: 0.5rem;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: var(--text);
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text);
 }
 
 .footer-center {
-  display: flex;
-  flex: 0 0 auto;
-  margin-left: 6rem;
-  text-align: center;
-  color: var(--text);
+    display: flex;
+    flex: 0 0 auto;
+    margin-left: 6rem;
+    text-align: center;
+    color: var(--text);
 }
 
 .footer-center p {
-  margin: 0;
-  font-size: 0.95rem;
-  color: var(--text);
+    margin: 0;
+    font-size: 0.95rem;
+    color: var(--text);
 }
 
 .footer-social {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex: 0 0 auto;
 }
 
 .footer-link {
-  color: var(--text);
-  text-decoration: none;
-  transition: color 0.3s ease;
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .footer-link:hover { color: var(--primary); }
 
 .separator {
-  color: #bdc3c7;
+    color: #bdc3c7;
 }
 
 .social-icon {
-  color: #fff;
-  transition: color 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 25px;
-  height: 25px;
+    color: #fff;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
 }
 
 .social-icon:hover { color: var(--primary); }
 
 @media (max-width: 850px) {
-  .footer-container {
-    flex-direction: column;
-    align-items: stretch;
-  }
-  .footer-brand,
-  .footer-social {
-    justify-content: center;
-    text-align: center;
-  }
-   .footer-center {
-    justify-content: center;
-    text-align: center;
-    margin: 0rem;
-  }
+    .footer-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .footer-brand,
+    .footer-social {
+        justify-content: center;
+        text-align: center;
+    }
+    .footer-center {
+        justify-content: center;
+        text-align: center;
+        margin: 0rem;
+    }
 }
 
 @media (max-width: 950px) {
-   .footer-center {
-    justify-content: center;
-    text-align: center;
-    margin: 0rem;
-  }
+    .footer-center {
+        justify-content: center;
+        text-align: center;
+        margin: 0rem;
+    }
 
 }
 
@@ -1353,29 +1370,29 @@ section {
 }
 
 .privacy-wrapper {
-  padding: 1rem 2rem;  
+    padding: 1rem 2rem;
 }
 
 .privacy-wrapper h1, h2, p {
-  margin-top:    0;            
-  margin-bottom: 0;            
+    margin-top:    0;
+    margin-bottom: 0;
 }
 
 .privacy-wrapper h1 {
-  margin-bottom: 1.5rem;       
-  line-height:   1.3;          
+    margin-bottom: 1.5rem;
+    line-height:   1.3;
 }
 
 .privacy-wrapper h2 {
-  margin-top:    2rem;         
-  margin-bottom: 0.75rem;      
-  line-height:   1.35;
+    margin-top:    2rem;
+    margin-bottom: 0.75rem;
+    line-height:   1.35;
 }
 
 .privacy-wrapper p {
-  margin-top:    0;            
-  margin-bottom: 1rem;         
-  line-height:   1.6;          
+    margin-top:    0;
+    margin-bottom: 1rem;
+    line-height:   1.6;
 }
 
 .hero-meta {
@@ -1496,7 +1513,7 @@ section {
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 
-    border: 2px solid var(--primary); 
+    border: 2px solid var(--primary);
 }
 
 .discord-stats {
@@ -1616,3 +1633,96 @@ section {
         grid-template-columns: 1fr;
     }
 }
+
+        .dependencies-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .dependencies-header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+
+        .dependencies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .dependency-card {
+            background: var(--background);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-left: 4px solid #3498db;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .mod-name {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #2c3e50;
+            margin: 0;
+        }
+
+        .status-badge {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .version-info {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .mod-description {
+            color: var(--text);
+            line-height: 1.5;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+
+        .download-link {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: var(--primary);
+            color: black !important;
+            padding: 8px 16px;
+            text-decoration: none !important;
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .download-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(230, 167, 40, 0.3);
+        }
+
+        /* Optional: Different border colors for required vs optional */
+        .dependency-card.required {
+            border-left-color: #e74c3c;
+        }
+
+        .dependency-card.optional {
+            border-left-color: #27ae60;
+        }
