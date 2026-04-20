@@ -2,7 +2,7 @@
 
 ![Banner](https://cdn.rigsofrods.org/data/profile_banners/l/0/83.jpg)
 
-*“Where realism and fun come together.” | The Banner is Temporary*  
+*“Where realism and fun come together.”* 
 
 ---  
 
