@@ -2,6 +2,7 @@ User-agent: *
 Disallow: /
 Disallow: /archived
 Disallow: /meta
+Disallow: /404
 
 User-agent: DuckDuckBot
 Allow: /

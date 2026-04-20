@@ -18,6 +18,15 @@ body {
     background-color: var(--background);
 }
 
+::-moz-selection {
+    background-color: var(--primary);
+    color: var(--background);
+}
+::selection {
+    background-color: var(--primary);
+    color: var(--background);
+}
+
 a {
     color: var(--primary);
     transition: color 0.2s ease, background-color 0.2s ease, text-shadow 0.2s ease;
@@ -27,6 +36,14 @@ a:hover,
 a:focus {
     text-shadow: 0 0 4px var(--primary);
     outline: none;
+}
+
+p {
+    letter-spacing: 0.02em
+}
+
+h2 {
+    color: var(--primary)
 }
 
 header {
@@ -564,7 +581,7 @@ section {
 .blog-post-content {
     font-size: 1.1rem;
     line-height: 1.8;
-    color: #444;
+    color: #fff;
 }
 
 .blog-post-content p {
@@ -583,7 +600,7 @@ section {
     margin: 2rem 0 1rem;
 }
 
-.blog-post-content blockquote {
+blockquote {
     border-left: 4px solid var(--primary);
     padding-left: 1.5rem;
     margin: 2rem 0;
@@ -1616,3 +1633,96 @@ section {
         grid-template-columns: 1fr;
     }
 }
+
+        .dependencies-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .dependencies-header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+
+        .dependencies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .dependency-card {
+            background: var(--background);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+            border-left: 4px solid #3498db;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .mod-name {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #2c3e50;
+            margin: 0;
+        }
+
+        .status-badge {
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .version-info {
+            color: #7f8c8d;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+
+        .mod-description {
+            color: var(--text);
+            line-height: 1.5;
+            margin-bottom: 15px;
+            font-size: 0.95em;
+        }
+
+        .download-link {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-weight: 500;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: var(--primary);
+            color: black !important;
+            padding: 8px 16px;
+            text-decoration: none !important;
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .download-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(230, 167, 40, 0.3);
+        }
+
+
+        .dependency-card.required {
+            border-left-color: #e74c3c;
+        }
+
+        .dependency-card.optional {
+            border-left-color: #27ae60;
+        }
