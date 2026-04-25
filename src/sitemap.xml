@@ -3,7 +3,7 @@
   
   <url>
     <loc>https://kentuckyhawk.com/</loc>
-    <lastmod>2026-03-12</lastmod>      <!-- YYYY-MM-DD -->
+    <lastmod>2026-04-25</lastmod>      <!-- YYYY-MM-DD -->
     <changefreq>daily</changefreq>    <!-- always, hourly, daily, weekly, monthly, yearly, never -->
     <priority>1.0</priority>          <!-- 0.0–1.0, higher = more important -->
   </url>
@@ -52,7 +52,7 @@
 
   <url>
     <loc>https://kentuckyhawk.com/modpacks/ats</loc>
-    <lastmod>2026-01-12</lastmod>
+    <lastmod>2026-04-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.8</priority>
   </url>

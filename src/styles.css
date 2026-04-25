@@ -12,10 +12,21 @@
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
     font-family: "Anton", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     line-height: 1.6;
     color: var(--text);
     background-color: var(--background);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+main {
+    flex: 1;
 }
 
 ::-moz-selection {
@@ -39,12 +50,32 @@ a:focus {
     outline: none;
 }
 
-p {
+h1, h2, h3, h4 {
     letter-spacing: 0.02em;
 }
 
-h2 {
-    color: var(--primary);
+.hero-content h1 {
+    letter-spacing: 0.01em;
+}
+
+.nav-link, .logo {
+    letter-spacing: 0.03em;
+}
+
+.cta-button, .download-btn, .view-all-button, .read-more {
+    letter-spacing: 0.05em;
+}
+
+.stat-number {
+    letter-spacing: 0.02em;
+}
+
+.blog-content h2, .mod-info h3, .project-content h3 {
+    letter-spacing: 0.05em;
+}
+
+p {
+    letter-spacing: 0.02em;
 }
 
 header {
